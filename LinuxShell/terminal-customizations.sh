@@ -17,8 +17,6 @@ echo "Logout to reflect changes"
 sudo apt install curl wget git -y
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-exit
-
 # Check that the ZSHRC files are there
 echo "Checking that the zshrc files are there"
 ls -la | grep zshrc
