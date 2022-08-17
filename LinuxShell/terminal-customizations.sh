@@ -3,9 +3,9 @@ sudo apt install curl wget git zsh -y
 
 zsh --version
 
-# Set ZSH as default shell
-echo "Your Shell is currently:"
-echo $shell
+# # Set ZSH as default shell
+# echo "Your Shell is currently:"
+# echo $shell
 
 # Change to ZSH
 echo "Changing to ZSH"
@@ -16,6 +16,8 @@ echo "Logout to reflect changes"
 # Install Oh My ZSH
 sudo apt install curl wget git -y
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+exit
 
 # Check that the ZSHRC files are there
 echo "Checking that the zshrc files are there"
