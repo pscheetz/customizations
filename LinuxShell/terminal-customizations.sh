@@ -24,8 +24,8 @@ ls -la | grep zshrc
 
 echo "Installing ZSH Plugins"
 # Install the ZSH Plugins
-git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
 
 echo "Installing PowerLevel10k"
 # Install Powerlevel10k
@@ -34,7 +34,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 mv ~/.zshrc ~/.zshrc_OLD
 
 echo "Copying Config files"
-cp ./zshrc ~/.zshrc
-cp ./p10k.zsh ~/.p10k.zsh
+cp ./.zshrc ~/.zshrc
+cp ./.p10k.zsh ~/.p10k.zsh
 
 echo "Done! Restart your terminal to take effect"
