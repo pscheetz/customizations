@@ -22,7 +22,7 @@ $scala\
 [](fg:#303030 bg:#001d3e)\
 $docker_context\
 [](fg:#001d3e bg:#3b5454)\
-$time\
+$hostname\
 [ ](fg:#3b5454)\
 """
 
@@ -37,7 +37,7 @@ show_always = true
 style_user = "bg:#303030"
 style_root = "bg:#303030"
 format = '[$user ]($style)'
-disabled = true
+disabled = false
 
 # An alternative to the username module which displays a symbol that
 # represents the current operating system
@@ -133,8 +133,14 @@ symbol = " "
 style = "bg:#303030"
 format = '[ $symbol ($version) ]($style)'
 
-[time]
+[hostname]
+ssh_only = false
+format = '[ on $hostname ]($style)'
+style = "bg:#3b5454 fg:#00ff00"
 disabled = false
+
+[time]
+disabled = true
 time_format = "%R" # Hour:Minute Format
 style = "bg:#3b5454"
 format = '[ $time ]($style)'
