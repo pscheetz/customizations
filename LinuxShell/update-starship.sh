@@ -2,5 +2,5 @@
 
 echo "Copying Starship file"
 
-mkdir ~/.config
+mkdir -p ~/.config
 cp ./starship.toml ~/.config/starship.toml
