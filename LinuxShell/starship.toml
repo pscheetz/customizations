@@ -24,7 +24,6 @@ $docker_context\
 [](fg:#001d3e bg:#3b5454)\
 $time\
 [ ](fg:#3b5454)\
-\n$character
 """
 
 # Disable the blank line at the start of the prompt
