@@ -43,7 +43,7 @@ echo "Copying Config files"
 cp ./.zshrc ~/.zshrc
 
 mkdir ~/.config
-cp ./starship.toml ~/.config/.starship.toml
+cp ./starship.toml ~/.config/starship.toml
 
 
 # Again, disabling pl10k
