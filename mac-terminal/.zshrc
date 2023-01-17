@@ -8,3 +8,9 @@ fi
 
 eval "$(starship init zsh)"
 SPACESHIP_PROMPT_ASYNC=FALSE
+
+# Aliases
+alias ls='ls --color=auto'
+alias ll='ls -alh'
+alias llt='ls -alth'
+alias flushdns='sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder | echo "DNS Flushed"'
